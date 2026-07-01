@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+        content="width=device-width,
+        initial-scale=1.0">
+        <title>Registro de Estudiantes</title> 
+        <link rel="stylesheet" href="promedios.css">
+    </head>
+    <body>
+        <div class="contenedor">
+        <h1>Registro de Estudiantes</h1>
+        <input type="text" id="nombre"
+        placeholder="Nombre del Estudiante">
+       <input type="number" id="nota1"
+        placeholder="1er trimestre"  min="0"
+        max-="100">
+        <input type="number" id="nota2"
+        placeholder="2do trimestre"  min="0"
+        max-="100">
+        <input type="number" id="nota3"
+        placeholder="3er trimestre"  min="0"
+        max-="100">
+        <button onclick="guardar()">Registrar</button>
+
+        <h2>Lista de Estudiantes </h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>1er</th>
+                    <th>2do</th>
+                    <th>3er</th>
+                    <th>promedio</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                    </tr>
+            </thead>
+            <tbody id="tabla"></tbody>
+        </table>
+
+        </div>
+        <script src="promedios.js"></script>
+    </body>
+</html>
